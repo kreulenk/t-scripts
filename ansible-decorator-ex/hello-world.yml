@@ -1,0 +1,17 @@
+---
+- name: "Simple example to print inputted values"
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Print someNumber
+      debug:
+        msg: "Value for someNumber: {{someNumber}}"
+    - name: Print someString
+      debug:
+        msg: "Value for someString: {{someString}}"
+    - name: Print someArray of string
+      debug:
+        msg: "Value for someArray of string: {{someArray}}"
+    - name: Print someObject
+      debug:
+        msg: "Value for someObject: {{someObject}}"
