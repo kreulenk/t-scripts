@@ -23,8 +23,7 @@
   },
   "required": [
     "device",
-    "commands",
-    "priority"
+    "commands"
   ],
   "additionalProperties": false
 }
