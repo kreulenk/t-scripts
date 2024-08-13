@@ -11,9 +11,10 @@ def main():
     commands_input = args.commands
 
     try:
-        print("The device you entered was " + device)
+        print("The device you entered was %s", device)
         commands = json.loads(commands_input)
-        print("The command you entered was " + commands)
+        print("The command you entered was ")
+        print(*commands, sep = ', ')
     except json.JSONDecodeError:
         commands = [commands_input]
         print("Inputted value of '%s' for commands could not be parsed", commands)
