@@ -11,13 +11,13 @@ def main():
     commands_input = args.commands
 
     try:
-        print("The device you entered was %s", device)
+        print("The device you entered was", device)
         commands = json.loads(commands_input)
         print("The command you entered was ")
         print(*commands, sep = ', ')
     except json.JSONDecodeError:
         commands = [commands_input]
-        print("Inputted value of '%s' for commands could not be parsed", commands)
+        print("Inputted value of " + commands + " for commands could not be parsed")
 
 if __name__ == "__main__":
     main()
