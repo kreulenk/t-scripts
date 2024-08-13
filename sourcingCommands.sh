@@ -1,5 +1,6 @@
 torero create repository t-scripts --url https://github.com/kreulenk/t-scripts.git
-torero create decorator py-deco --schema @./ansible-decorator-ex/command-decorator.yml
+
+torero create decorator py-deco --schema @./py-decorator-ex/py-deco.yml
 torero create python-script py-decorator-ex --filename main.py --decorator py-deco --repository t-scripts --working-dir py-decorator-ex
 torero run python-script py-decorator-ex --set device=test --set commands='["cmd1","cmd2"]'
 
