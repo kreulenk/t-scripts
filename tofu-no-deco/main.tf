@@ -11,5 +11,5 @@ variable "location" {
 resource "local_file" "foo" {
     content = var.content
     filename = var.location
-    file_permissions = 0644
+    file_permission = 0644
 }
