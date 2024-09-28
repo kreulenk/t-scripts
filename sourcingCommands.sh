@@ -10,3 +10,5 @@ torero create service ansible-playbook ansible-decorator-ex --playbook hello-wor
 torero run ansible-playbook ansible-decorator-ex --set someNumber=5 --set someString=test --set someArray='["test1","test2"]' --set someObject='{"key1":"val1","key2":1}'
 
 torero create service ansible-playbook ansible-no-deco --playbook main.yml --repository t-scripts --working-dir ansible-no-deco
+
+torero create service opentofu-plan torero-no-deco --repository t-scripts --working-dir tofu-no-deco
