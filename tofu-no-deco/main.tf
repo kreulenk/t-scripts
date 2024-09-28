@@ -1,4 +1,4 @@
-variable "context" {
+variable "content" {
     type = string
     default = "testTofuFile"
 }
@@ -9,7 +9,7 @@ variable "location" {
 }
 
 resource "local_file" "foo" {
-    context = var.context
+    content = var.content
     filename = var.location
     file_permissions = 0644
 }
