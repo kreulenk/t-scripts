@@ -12,3 +12,5 @@ torero run ansible-playbook ansible-decorator-ex --set someNumber=5 --set someSt
 torero create service ansible-playbook ansible-no-deco --playbook main.yml --repository t-scripts --working-dir ansible-no-deco
 
 torero create service opentofu-plan tofu-no-deco --repository t-scripts --working-dir tofu-no-deco
+
+torero create service python-script py-two-min --filename main.py --repository t-scripts --working-dir py-two-min
