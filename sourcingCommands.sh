@@ -16,3 +16,5 @@ torero create service opentofu-plan tofu-no-deco --repository t-scripts --workin
 torero create service python-script py-two-min --filename main.py --repository t-scripts --working-dir py-two-min
 
 torero create service python-script uptime-fetcher --filename main.py --repository t-scripts --working-dir uptime-fetcher
+
+torero create service python-script is-odd --filename main.py --repository t-script --working-dir is-odd
