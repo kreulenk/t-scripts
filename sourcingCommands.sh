@@ -17,4 +17,4 @@ torero create service python-script py-two-min --filename main.py --repository t
 
 torero create service python-script uptime-fetcher --filename main.py --repository t-scripts --working-dir uptime-fetcher
 
-torero create service python-script is-odd --filename main.py --repository t-script --working-dir is-odd
+torero create service python-script is-odd --filename main.py --repository t-scripts --working-dir is-odd
