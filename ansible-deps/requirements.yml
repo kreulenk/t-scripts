@@ -2,4 +2,4 @@ collections:
   - name: community.docker
 
 roles:
-  - name: jdauphant.ssl-certs
+  - name: danielino.debug
