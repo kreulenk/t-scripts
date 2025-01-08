@@ -1,9 +1,5 @@
 collections:
   - name: community.docker
-<<<<<<< HEAD
 
 roles:
   - name: jdauphant.ssl-certs
-=======
-    version: 3.13.2
->>>>>>> 2390e940ea9807d7352e44a5ff94597fe01116d2
