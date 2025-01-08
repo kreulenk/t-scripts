@@ -3,9 +3,7 @@
   hosts: localhost
   gather_facts: no
   roles:
-    - role: jdauphant.ssl-certs
-      ssl_certs_local_privkey_path: '/tmp/example-key-from-torero.key'
-      ssl_certs_local_cert_path: '/tmp/example-key-from-torero.pem'
+    - role: danielino.debug
   tasks:
     - name: Get info on docker host
       community.docker.docker_host_info:
@@ -13,4 +11,3 @@
     - name: Show host information
       ansible.builtin.debug:
         var: result.host_info
-    - name: Generate certs in tmp
