@@ -19,6 +19,4 @@ torero create service python-script uptime-fetcher --filename main.py --reposito
 
 torero create service python-script is-odd --filename main.py --repository t-scripts --working-dir is-odd
 
-torero create service python-script is-odd-no-conf --filename main.py --repository t-scripts --working-dir is-odd-no-conf
-
 torero create service ansible-playbook ansible-docker --playbook main.yml --repository t-scripts --working-dir ansible-deps
