@@ -1,4 +1,5 @@
 import time
-print("about to wait for two minutes")
-time.sleep(120)
-print("done waiting for two minutes")
+
+for i in range(10):
+    print(i)
+    time.sleep(1)
