@@ -2,8 +2,6 @@
 - name: Docker example
   hosts: localhost
   gather_facts: no
-  roles:
-    - role: danielino.debug
   tasks:
     - name: Get info on docker host
       community.docker.docker_host_info:
