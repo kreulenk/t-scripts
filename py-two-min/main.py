@@ -1,5 +1,5 @@
 import time
 
-for i in range(50):
+for i in range(20):
     print(i)
-    time.sleep(1)
+    time.sleep(5)
