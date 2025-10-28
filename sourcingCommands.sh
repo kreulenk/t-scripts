@@ -22,4 +22,6 @@ torero create service python-script is-odd --filename main.py --repository t-scr
 torero create service ansible-playbook ansible-docker --playbook main.yml --repository t-scripts --working-dir ansible-deps
 
 torero create decorator secret-and-reg --schema @./python-env-var/secret-and-reg.yml
-torero create service python-script set-secret --repository t-scripts --working-dir pyton-env-var --filename main.py --decorator secret-and-reg
+torero create service python-script set-secret --repository t-scripts --working-dir python-env-var --filename main.py --decorator secret-and-reg
+torero create secret example-secret --value some-val-that-is-encrypted-in-store
+torero run service python-script set-secret --set device=some-dev --set password=example-secret
