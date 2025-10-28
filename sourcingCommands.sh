@@ -20,3 +20,6 @@ torero create service python-script uptime-fetcher --filename main.py --reposito
 torero create service python-script is-odd --filename main.py --repository t-scripts --working-dir is-odd
 
 torero create service ansible-playbook ansible-docker --playbook main.yml --repository t-scripts --working-dir ansible-deps
+
+torero create decorator secret-and-reg --schema @./python-env-var/secret-and-reg.yml
+torero create service python-script set-secret --repository t-scripts --working-dir pyton-env-var --filename main.py --decorator secret-and-reg
